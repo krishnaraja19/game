@@ -49,7 +49,7 @@ public class GameService {
 
             // Validate bet amount
             if (betAmount < Double.parseDouble(minBetAmount) || betAmount > Double.parseDouble(maxBetAmount))
-                throw new InvalidBetAmountException();
+                throw new InvalidBetAmountException(minBetAmount,maxBetAmount);
 
             // Generate a random number (1-6)
             int winningNumber = generateRandomNumber();
