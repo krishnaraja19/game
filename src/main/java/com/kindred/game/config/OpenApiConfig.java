@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class OpenApiConfig {
 
     @Bean
-    public OpenAPI schoolMicroserviceOpenAPI() {
+    public OpenAPI gameMicroserviceOpenAPI() {
         return new OpenAPI()
                 .info(new Info().title("Online Betting Game")
                         .description("Choose yor number and Win the betting Amount!!!")
